@@ -1,0 +1,4 @@
+# file: /Users/docker-admin/repos/match-list-change-detector/logging_config.py
+# hypothesis_version: 6.135.32
+
+[1024, 'CRITICAL', 'DEBUG', 'ERROR', 'INFO', 'LOG_DIR', 'LOG_FILE', 'LOG_LEVEL', 'WARNING', 'logs']

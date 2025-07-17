@@ -215,7 +215,7 @@ class TestPersistentService(unittest.TestCase):
         self.assertEqual(service.run_mode, "oneshot")  # Default
         self.assertEqual(service.cron_schedule, "0 * * * *")  # Default
         self.assertEqual(service.health_server_port, 8000)  # Default
-        self.assertEqual(service.health_server_host, "0.0.0.0")  # Default
+        self.assertEqual(service.health_server_host, "127.0.0.1")  # Default
 
     def test_environment_variable_integration(self):
         """Test integration with environment variables."""

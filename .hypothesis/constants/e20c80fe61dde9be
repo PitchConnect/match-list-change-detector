@@ -1,0 +1,4 @@
+# file: /Users/docker-admin/repos/match-list-change-detector/persistent_service.py
+# hypothesis_version: 6.135.32
+
+[200, 500, 503, '/health', '/status', '/trigger', '0 * * * *', '1.0.0', '127.0.0.1', '8000', 'CRON_SCHEDULE', 'FOGIS_PASSWORD', 'FOGIS_USERNAME', 'HEALTH_SERVER_HOST', 'HEALTH_SERVER_PORT', 'HTTP server stopped', 'NOT_SET', 'RUN_MODE', 'Service mode stopped', '__main__', 'configuration', 'cron_schedule', 'execution_count', 'fogis_password_set', 'fogis_username', 'health_server_host', 'health_server_port', 'healthy', 'info', 'last_execution', 'message', 'next_execution', 'oneshot', 'persistent_service', 'run_mode', 'running', 'service', 'service_name', 'status', 'success', 'timestamp', 'unhealthy', 'uptime_seconds']
