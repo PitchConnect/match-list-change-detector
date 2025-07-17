@@ -1,4 +1,0 @@
-# file: /Users/docker-admin/repos/match-list-change-detector/python_compat.py
-# hypothesis_version: 6.135.32
-
-['_compat_pickle', 'http', 'http.client', 'http.cookiejar', 'http.cookies', 'http.server', 'logging', 'logging.handlers', 'pickle', 'urllib', 'urllib.error', 'urllib.parse', 'urllib.request']

@@ -1,4 +1,0 @@
-# file: /Users/docker-admin/repos/match-list-change-detector/config.py
-# hypothesis_version: 6.135.32
-
-[365, 8000, 8001, '1', 'API_RATE_LIMIT', 'CONTAINER_NETWORK', 'DAYS_AHEAD', 'DAYS_BACK', 'DOCKER_COMPOSE_FILE', 'Europe/Stockholm', 'FOGIS_PASSWORD', 'FOGIS_USERNAME', 'HEALTH_SERVER_PORT', 'INFO', 'LOG_DIR', 'LOG_FILE', 'LOG_LEVEL', 'METRICS_SERVER_PORT', 'SSL_CERT_FILE', 'SSL_KEY_FILE', 'TZ', 'USE_HTTPS', 'certs/server.crt', 'certs/server.key', 'fogis-network', 'logs', 'true', 'yes']
