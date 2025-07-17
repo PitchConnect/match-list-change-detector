@@ -635,28 +635,33 @@ def mask_sensitive_data(data: str) -> str:
 
 def main() -> bool:
     """Run the match list change detection process."""
-    # Check for required configuration
-    username = config.get("FOGIS_USERNAME")
-    password = config.get("FOGIS_PASSWORD")
+    try:
+        # Check for required configuration
+        username = config.get("FOGIS_USERNAME")
+        password = config.get("FOGIS_PASSWORD")
 
-    if not username or not password:
-        logger.error("FOGIS_USERNAME and FOGIS_PASSWORD must be set in configuration")
+        if not username or not password:
+            logger.error("FOGIS_USERNAME and FOGIS_PASSWORD must be set in configuration")
+            return False
+
+        # Log username only, never log password even if masked
+        logger.info(f"Using FOGIS account: {username}")
+        logger.debug("Password provided: [REDACTED]")
+
+        # Create and run the detector
+        detector = MatchListChangeDetector(username, password)
+        success = detector.run()
+
+        if success:
+            logger.info("Match list change detection completed successfully")
+        else:
+            logger.error("Match list change detection failed")
+
+        return success
+
+    except Exception as e:
+        logger.error(f"Unexpected error in main: {e}")
         return False
-
-    # Log username only, never log password even if masked
-    logger.info(f"Using FOGIS account: {username}")
-    logger.debug("Password provided: [REDACTED]")
-
-    # Create and run the detector
-    detector = MatchListChangeDetector(username, password)
-    success = detector.run()
-
-    if success:
-        logger.info("Match list change detection completed successfully")
-    else:
-        logger.error("Match list change detection failed")
-
-    return success
 
 
 if __name__ == "__main__":

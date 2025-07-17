@@ -5,6 +5,11 @@ Logging configuration for the match list change detector.
 Provides functions to configure and access loggers.
 """
 
+# Apply Python 3.13+ compatibility fixes first
+from python_compat import fix_python_313_imports
+
+fix_python_313_imports()
+
 import logging
 import os
 from typing import Optional
