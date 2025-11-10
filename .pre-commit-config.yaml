@@ -35,7 +35,7 @@ repos:
     -   id: mypy
         additional_dependencies: [types-requests]
         # Align with CI/CD: exclude files with known issues to prevent local-only failures
-        exclude: ^(tests/test_main\.py|tests/test_match_list_change_detector\.py|tests/test_utils\.py|match_list_change_detector\.py|centralized_api_client\.py|update_timezone\.py|health_server\.py|logging_config\.py|docs/).*$
+        exclude: ^(tests/test_main\.py|tests/test_match_list_change_detector\.py|tests/test_utils\.py|match_list_change_detector\.py|centralized_api_client\.py|update_timezone\.py|health_server\.py|logging_config\.py|docs/.*)$
 
 -   repo: https://github.com/PyCQA/bandit
     rev: 1.7.5
